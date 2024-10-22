@@ -1,0 +1,16 @@
+name: github-actions-1
+on: push
+jobs:
+    github-actions-basics:
+        name: github-actions-basics
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Welcome Message
+              run: echo "first github action"
+            
+            - name: List files
+              run: ls
+            
+            - name: Read readme.md
+              run: cat readme.md
